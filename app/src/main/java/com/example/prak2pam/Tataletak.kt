@@ -15,7 +15,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.modifier.modifierLocalProvider
@@ -153,6 +152,14 @@ fun TataletakRowColumn(modifier: Modifier) {
                 Image(painter = gambar,
                     contentDescription = null,
                     contentScale = ContentScale.Fit)
-                Text(text = "My Cipung")
+                Text(text = "My Music",
+                    fontSize = 50.sp,
+                    color = Color.Red,
+                    fontWeight = FontWeight.Bold,
+                    fontFamiliy = FontFamily.Cursive
             }
+        }
+            }
+        }
+
 
