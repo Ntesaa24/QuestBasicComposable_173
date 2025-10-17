@@ -150,6 +150,9 @@ fun TataletakRowColumn(modifier: Modifier) {
                     .background(color = Color.Cyan),
                 contentAlignment = Alignment.Center
             ){
-
+                Image(painter = gambar,
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit)
+                Text(text = "My Cipung")
             }
 
