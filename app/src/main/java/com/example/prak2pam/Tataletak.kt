@@ -15,14 +15,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.vi.Modifier
-import androidx.compose.vi.graphics.Color
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.vi.res.painterResource
-import androidx.compose.vi.text.font.FontFamily
-import androidx.compose.vi.text.font.FontWeight
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.provider.FontsContractCompat
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -35,10 +36,27 @@ fun TataletakColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataLetakBox(modifier: Modifier){
+fun TataletakBox(modifier: Modifier){
     Box(
         modifier = modifier
             .fillMaxHeight()
-            .fillMaxWidth()
-    )
+            .fillMaxWidth(), contentAlignment = Alignment.Center
+    ){
+        Text(text = "Box 1")
+        Text(text = "Column 1")
+        Text(text = "Row 1")
+        Text(text = "Box 2")
+        Text(text = "Column 2")
+    }
 }
+
+@Composable
+fun TataletakColumnRow(modifier: Modifier){
+    Column(){
+        //Bariasi
+        Row(modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly)
+    }
+}
+
+
