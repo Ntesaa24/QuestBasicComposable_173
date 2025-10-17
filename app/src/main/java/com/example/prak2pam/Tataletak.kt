@@ -53,7 +53,7 @@ fun TataletakBox(modifier: Modifier){
 @Composable
 fun TataletakColumnRow(modifier: Modifier){
     Column(){
-        //Bariasi
+        //Barisasi
         Row(modifier = modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly)
     }
@@ -156,7 +156,10 @@ fun TataletakRowColumn(modifier: Modifier) {
                     fontSize = 50.sp,
                     color = Color.Red,
                     fontWeight = FontWeight.Bold,
-                    fontFamiliy = FontFamily.Cursive
+                    fontFamiliy = FontFamily.Cursive,
+                    modifier = Modifier.align(
+                        alignment = Alignment.Center))
+                    )
             }
         }
             }
